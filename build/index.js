@@ -11,6 +11,9 @@ const csvFileReader = new CsvFileReader_1.CsvFileReader("football.csv");
 // the ' data reader ' interface
 const matchReader = new MatchReader_1.MatchReader(csvFileReader);
 matchReader.load();
-const summary = new Summary_1.Summary(new WinsAnalysis_1.WinsAnalysis("Man United"), new HtmlReport_1.HtmlReport());
+const summary = new Summary_1.Summary(
+  new WinsAnalysis_1.WinsAnalysis("Man United"),
+  new HtmlReport_1.HtmlReport()
+);
 summary.buildAndPrintReport(matchReader.matches);
 //

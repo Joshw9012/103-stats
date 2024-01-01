@@ -18,3 +18,4 @@ export class Summary {
     this.outputTarget.print(output);
   }
 }
+//
